@@ -1728,6 +1728,12 @@ ul, ol {
     --section-padding: 60px 0;
   }
 
+  /* ---- Body padding for sticky bar ---- */
+  body {
+    padding-bottom: 70px;
+  }
+
+  /* ---- Navbar ---- */
   .navbar-menu {
     display: none;
     position: absolute;
@@ -1764,12 +1770,51 @@ ul, ol {
     display: flex;
   }
 
+  .navbar-logo img {
+    height: 36px;
+  }
+
+  .navbar-logo-name {
+    font-size: 1.05rem;
+  }
+
+  .navbar-logo-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 6px 14px;
+    margin-bottom: 20px;
   }
 
   .hero-buttons {
     flex-direction: column;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
   }
 
   .hero-stats {
@@ -1777,34 +1822,251 @@ ul, ol {
     gap: 20px;
   }
 
+  .hero-stat {
+    min-width: 80px;
+  }
+
+  .hero-stat-number {
+    font-size: 1.5rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.7rem;
+  }
+
+  /* ---- Trust Bar ---- */
+  .trust-bar {
+    padding: 24px 0;
+  }
+
+  .trust-item {
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+
+  .trust-item-icon {
+    font-size: 1.1rem;
+  }
+
+  /* ---- Services ---- */
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  .service-title {
+    font-size: 1.05rem;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+  }
+
+  .service-cta {
+    font-size: 0.8rem;
+    margin-right: 12px;
+    margin-top: 4px;
+  }
+
+  /* ---- Section Headers ---- */
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    padding: 5px 14px;
+    letter-spacing: 2px;
+  }
+
+  /* ---- Why Us ---- */
   .why-us-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
+  .why-card {
+    padding: 28px 20px;
+  }
+
+  .why-card-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.4rem;
+  }
+
+  .why-card-title {
+    font-size: 1.05rem;
+  }
+
+  .why-card-description {
+    font-size: 0.85rem;
+  }
+
+  /* ---- Stats ---- */
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 20px;
   }
 
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+  }
+
+  /* ---- Process ---- */
   .process-timeline {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .process-step {
+    padding: 28px 20px;
+  }
+
+  .process-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .process-title {
+    font-size: 1.05rem;
+  }
+
+  .process-desc {
+    font-size: 0.85rem;
+  }
+
+  /* ---- Detail Blocks ---- */
+  .detail-block,
+  .detail-block.reverse {
+    gap: 24px;
+    padding: 28px 20px;
+  }
+
+  .detail-title {
+    font-size: 1.2rem;
+  }
+
+  .detail-description {
+    font-size: 0.88rem;
   }
 
   .detail-list {
     grid-template-columns: 1fr;
   }
 
+  .detail-list li {
+    font-size: 0.85rem;
+  }
+
+  .detail-card-visual {
+    padding: 24px 18px;
+  }
+
+  .visual-row-label {
+    font-size: 0.82rem;
+  }
+
+  .visual-row-value {
+    font-size: 0.85rem;
+  }
+
+  /* ---- Testimonials ---- */
   .testimonials-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testimonial-card {
+    padding: 28px 20px;
+  }
+
+  .testimonial-text {
+    font-size: 0.88rem;
+  }
+
+  /* ---- FAQ ---- */
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 16px 18px;
+  }
+
+  .faq-answer-inner {
+    font-size: 0.85rem;
+    padding: 0 18px 18px;
+  }
+
+  /* ---- Contact Section ---- */
+  .contact-wrapper {
+    gap: 28px;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info p {
+    font-size: 0.88rem;
+  }
+
+  .contact-detail-item {
+    padding: 14px;
+  }
+
+  .contact-detail-value {
+    font-size: 0.88rem;
+    word-break: break-all;
+  }
+
+  .contact-form-card {
+    padding: 28px 18px;
+  }
+
+  .contact-form-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .form-actions .btn {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+
+  /* ---- Footer ---- */
+  .footer {
+    padding: 40px 0 20px;
+    margin-bottom: 0;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
   }
 
   .footer-bottom {
@@ -1813,34 +2075,131 @@ ul, ol {
     text-align: center;
   }
 
+  .footer-disclaimer {
+    font-size: 0.72rem;
+  }
+
   /* Show mobile CTA bar */
   .mobile-cta-bar {
     display: block;
   }
 
+  .mobile-cta-bar .btn {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+
+  /* Move floating WhatsApp above CTA bar */
   .whatsapp-float {
-    bottom: 80px;
+    bottom: 76px;
+    right: 16px;
+  }
+
+  .whatsapp-float-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
   }
 
   .whatsapp-float-tooltip {
     display: none;
   }
 
-  .contact-form-card {
-    padding: 28px 20px;
+  /* ---- Buttons general ---- */
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.88rem;
+  }
+
+  .btn-icon {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
   .hero-stat-number {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.65rem;
+  }
+
+  .hero-stats {
+    gap: 16px;
   }
 
   .stat-number {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.35rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .service-card {
+    padding: 24px 16px;
+  }
+
+  .service-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  .process-step {
+    padding: 24px 16px;
+  }
+
+  .why-card {
+    padding: 24px 16px;
+  }
+
+  .detail-block,
+  .detail-block.reverse {
+    padding: 24px 16px;
+  }
+
+  .testimonial-card {
+    padding: 24px 16px;
+  }
+
+  .contact-form-card {
+    padding: 24px 14px;
+  }
+
+  .contact-detail-value {
+    font-size: 0.82rem;
+  }
+
+  .mobile-cta-bar .btn {
+    padding: 10px 6px;
+    font-size: 0.75rem;
+  }
+
+  .whatsapp-float {
+    bottom: 72px;
+    right: 12px;
+  }
+
+  .whatsapp-float-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 1.3rem;
+  }
+
+  .footer-logo img {
+    height: 32px;
   }
 }
+
